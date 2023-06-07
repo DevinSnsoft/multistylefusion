@@ -1,0 +1,26 @@
+{
+    "CUDA_VISIBLE_DEVICES": "0",
+    "L1_weight": 420,
+    "batch_size": 50,
+    "checkpoint": null,
+    "decoder_base_channel": 64,
+    "decoder_num": 1,
+    "epochs": 200,
+    "global_checkpoint": null,
+    "input_dir": "datasets/243/train",
+    "input_size": 80,
+    "local_enhancer_L1weight": 320,
+    "local_enhancer_with_dis": 0,
+    "output_dir": "results/243/train",
+    "save_size": [
+        5,
+        10
+    ],
+    "save_summary": 1,
+    "seed": 1095774694,
+    "style_num": 3,
+    "together_epoch": 0,
+    "with_dis": 1,
+    "with_local_enhancer": 0,
+    "with_skel": 0
+}

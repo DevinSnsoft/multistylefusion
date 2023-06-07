@@ -1,0 +1,26 @@
+{
+    "CUDA_VISIBLE_DEVICES": "0",
+    "batch_size": 50,
+    "checkpoint": "results/243/train",
+    "decoder_base_channel": 64,
+    "decoder_num": 1,
+    "input_dir": "datasets/243/test",
+    "input_size": 80,
+    "interp": 0,
+    "interp_3style": 0,
+    "interp_interval": [
+        0,
+        1
+    ],
+    "interp_num": 10,
+    "local_enhancer_with_dis": 0,
+    "output_dir": "results/243/test",
+    "save_size": [
+        5,
+        10
+    ],
+    "style_num": 3,
+    "with_dis": 0,
+    "with_local_enhancer": 0,
+    "with_skel": 0
+}
