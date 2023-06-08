@@ -1,14 +1,10 @@
-# Few-shot font style transfer with multiple style encoders
-This repository contains the code for the paper:
-Few-shot font style transfer with multiple style encoders.
-https://www.sciengine.com/publisher/scp/journal/SCIS/doi/10.1007/s11432-021-3435-8
-### Environment
+### 开发环境
 TensorFlow=2.3
 Python=3.8
 pygame
 opencv-python
 tqdm
-### Directory Hierarchy
+### 目录结构
 ```
 MSEMD
     \_ datasets: images, training data and test data.
@@ -29,7 +25,7 @@ MSEMD
     get_data_list.py: generate training and test data.
 ```
 
-### Dataset
+### 数据集制作
 **step1.** Run `font2img.py` to generate font images, font_list and char_list.
 Configs:
 ```
@@ -55,7 +51,7 @@ get_multi_style_data_list(): generate training data for MSEMD.
 ```
 > (Optional) Run `font2img.py` and `get_data_list.py` again to generate images and dataset of resolution 256.
 
-### Training
+### 训练环节
 **stage1.** Run `train.py` to train MSEMD model:
 ```
 CUDA_VISIBLE_DEVICES=0,1 python src/train.py
@@ -79,7 +75,7 @@ CUDA_VISIBLE_DEVICES=0,1 python src/train.py
                         --with_local_enhancer 1
                         --global_checkpoint results/XXX/train
 ```
-### Test
+### 测试环节
 Run `test.py` to generate images of 4 areas and images of style fusion:
 ```
 CUDA_VISIBLE_DEVICES=0 python src/test.py
